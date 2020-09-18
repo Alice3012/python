@@ -17,7 +17,6 @@ string_one=input("Enter a string: ")
 print("You entered "+string_one)
 """
 
-
 #2. Пользователь вводит время в секундах. Переведите время в часы, минуты и секунды и выведите в формате чч:мм:сс. Используйте форматирование строк.
 """
 time_1=input("Input time in sec: ")
@@ -55,4 +54,27 @@ print(str(num_max))
 """
 
 #5. Запросите у пользователя значения выручки и издержек фирмы. Определите, с каким финансовым результатом работает фирма (прибыль — выручка больше издержек, или убыток — издержки больше выручки). Выведите соответствующее сообщение. Если фирма отработала с прибылью, вычислите рентабельность выручки (соотношение прибыли к выручке). Далее запросите численность сотрудников фирмы и определите прибыль фирмы в расчете на одного сотрудника.
-revenue_1=input("Input revenue")
+"""
+revenue_1=input("Input revenue: ")
+costs_1=input("Input expenses: ")
+if float(revenue_1)>float(costs_1):
+    print("Higher revenues. Profit!")
+    rent_1=float(revenue_1)/float(costs_1);
+    print("Profitability is {0}".format(rent_1))
+    number_1=input("How much people? ")
+    revenue_1_people=float(revenue_1)/float(number_1)
+    print("Profit per capita is {0}".format(revenue_1_people))
+else:
+    print("Higher expenses than revenue")
+ """
+ 
+#6. Спортсмен занимается ежедневными пробежками. В первый день его результат составил a километров. Каждый день спортсмен увеличивал результат на 10 % относительно предыдущего. Требуется определить номер дня, на который общий результат спортсмена составить не менее b километров. Программа должна принимать значения параметров a и b и выводить одно натуральное число — номер дня. 
+"""
+num_a=float(input("Result day 1: "))
+num_b=float(input("Min result: "))
+i=1
+while num_a<num_b:
+   i+=1 
+   num_a=num_a+num_a*0.1
+print("On the {:d} day the sportsman achieved the result - not less than {:.0f} km.".format(i,num_a))
+"""   
