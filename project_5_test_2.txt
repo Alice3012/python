@@ -1,0 +1,5 @@
+Stroka 1 Belka
+Stroka 2 Dve Belki
+Stroka 3 i belka v kletke
+Stroka 4 i belka v kletke i tam
+Stroka 5 i belka v kletke i tam v more

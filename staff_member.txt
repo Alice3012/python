@@ -1,0 +1,6 @@
+Petrov 20000
+Vasileva 30000
+Solovey 23000
+Markushina 5000
+Savelev 19000
+Mirov 31000
